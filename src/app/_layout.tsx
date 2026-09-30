@@ -1,15 +1,13 @@
 import { ActivityIndicator, StatusBar, View } from 'react-native';
 import { Stack } from 'expo-router';
 import { AuthProvider, useAuth } from '../context/AuthContext';
-import LottieSplashScreen from "@attarchi/react-native-lottie-splash-screen";
+
 import '../../global.css';
 import { useEffect } from 'react';
 
 function RootNavigator() {
 
-    useEffect(() => {
-        LottieSplashScreen?.hide();
-    }, []);
+  
     const { user, loading } = useAuth();
 
     // Wait for the saved-session check, otherwise a logged-in user would

@@ -62,6 +62,9 @@ export default function DateField({ label, value, onChange, maximumDate, minimum
                     onChange={handleChange}
                     maximumDate={maximumDate}
                     minimumDate={minimumDate}
+                     onDismiss={() => {
+       
+    }}
                 />
             )}
 

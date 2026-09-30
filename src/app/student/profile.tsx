@@ -101,7 +101,7 @@ export default function ProfileScreen() {
         }
 
         const result = await ImagePicker.launchImageLibraryAsync({
-            mediaTypes: ImagePicker.MediaTypeOptions.Images,
+            mediaTypes: ['images'],
             allowsEditing: true,
             aspect: [1, 1], // square crop, matches the circular avatar display
             quality: 0.7,   // compress before upload — faster on mobile data
